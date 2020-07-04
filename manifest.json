@@ -2,9 +2,7 @@
   "name": "RTL Github File Editor",
   "description": "Make github file editor RTL",
   "version": "0.1",
-  "permissions": [
-    "activeTab"
-  ],
+  "permissions": ["activeTab"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
