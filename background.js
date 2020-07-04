@@ -7,15 +7,15 @@ chrome.browserAction.onClicked.addListener(function() {
   chrome.tabs.executeScript({
     code:
       'if(document.getElementsByClassName("CodeMirror-lines")[0]) {' +
-        'document.getElementsByClassName("CodeMirror-lines")[0].setAttribute("style", "direction: rtl");' +
+      'document.getElementsByClassName("CodeMirror-lines")[0].setAttribute("style", "direction: rtl");' +
       "}" +
       'if(document.getElementById("readme")) {' +
-        'document.getElementById("readme").setAttribute("style", "direction: rtl");' +
+      'document.getElementById("readme").setAttribute("style", "direction: rtl");' +
       "}" +
       'if(document.querySelectorAll("table[data-tab-size]").length) {' +
-        'document.querySelectorAll("table[data-tab-size]").forEach((el) => {' +
-          'el.setAttribute("style", "direction: rtl")' +
-        '});' +
+      'document.querySelectorAll("table[data-tab-size]").forEach((el) => {' +
+      'el.setAttribute("style", "direction: rtl")' +
+      "});" +
       "}"
   });
 });
